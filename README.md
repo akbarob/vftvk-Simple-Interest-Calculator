@@ -1,1 +1,1 @@
-# coding-project-template
+# https://akbarob.github.io/vftvk-Simple-Interest-Calculator/
