@@ -1,16 +1,44 @@
-<html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App - Simple Interest Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
+</head>
     <body>
+        <div id="divv">
         <h1>Simple Interest Calculator</h1>
+        <label class="label" for="amount" name="amount">Amount</label> <input class="input1" type="number"  id="principal" required>  <br/>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <label  class="label" for="interest" name="interest">Interest Rate</label> <input class="input2" type="range" value="0" min="1" max="20" step="0.5" oninput="this.nextElementSibling.value = this.value" id="rate" required>
+        <output>0</output>% <br/>
+         
+        <label class="label3"  for="years" name="years" >No. of  Years</label> 
+        <select class="input3" type="number" min="0" id="years" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>   <br/>
+    
+        <button onclick="compute()" id="bb" onsubmit="return validate()"> Compute Interest</button> <br>
 
-        <button onclick="compute()">Compute</button>
+        <label for="result"></label> <p id="akbar"></p> <br>
+        
+
+        
+        <footer> &copy; Everyone Can Get Rich</footer>
+        </div>
+    
     </body>
+       
 </html>
