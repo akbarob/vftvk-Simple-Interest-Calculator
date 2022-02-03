@@ -28,7 +28,7 @@ function compute(){
         return false;
     }
     
-{amount.style.backgroundColor = "yellow";
+{
     document.getElementById("akbar").innerHTML = "If you deposit" + " " + amount + "<br>" +"at an interest rate of" +" "+ rate +"<br>"+ "You will recive an amount of" +" "+newAmount+ "" +"<br>" + "in the year" +" "+ v + "."
    
     
