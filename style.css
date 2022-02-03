@@ -67,4 +67,40 @@ footer{
     text-align: left;
     margin: 3%;
 }
+.code{
+    display:none;
+}
 
+@media screen and (max-width:500px){
+    #divv{
+        margin-top: 30%;
+    }
+    label{
+        margin-left: 10%;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    #bb{
+       margin-left: 30%;
+        text-align: center;
+    }
+
+    .code{
+        display: block;
+        color: white;
+        text-align: center;
+        font-variant: small-caps;
+        margin-top: 20%;
+        font-size: 30px;
+        animation: change 3s step-end both;
+    }
+        
+    @keyframes change {
+        from { color: #ffffff }
+        to   { color: #0000ff }
+        
+    }
+}
