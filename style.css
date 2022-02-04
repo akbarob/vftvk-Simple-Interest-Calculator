@@ -19,6 +19,10 @@ h1{
 font-size: 250%;
 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+h2{
+    font-variant: small-caps;
+    text-align: center;
+}
 label{
     margin-left: 30%;
 }
@@ -41,9 +45,10 @@ label{
     border-width: 2px;
 }
 #bb{
-    margin-left: 43%;
+    margin-left: 33%;
     margin-bottom: 3%;
     height: 30px;
+    width: 40%;
     background-color: blue;
     color: white;
     border-radius: 15px;
@@ -70,7 +75,9 @@ footer{
 .code{
     display:none;
 }
-
+.yellow{
+    background-color: yellow;
+}
 @media screen and (max-width:500px){
     #divv{
         margin-top: 30%;
@@ -86,6 +93,8 @@ footer{
     #bb{
        margin-left: 30%;
         text-align: center;
+        width: auto;
+    
     }
     .input2{
         margin-left: 4%;
