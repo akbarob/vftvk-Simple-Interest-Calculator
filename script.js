@@ -1,7 +1,11 @@
 function load(){
     var q = prompt("What do you like to be called?")
    
+if(q.value == "null"){
+    document.getElementById("name").style.display = "none";
+}
 document.getElementById("name").innerHTML = "hello" +" "+ q ; 
+
 }
 
 
