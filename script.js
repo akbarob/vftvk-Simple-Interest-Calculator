@@ -1,12 +1,11 @@
 function load(){
-    var q = prompt("What do you like to be called?")
-   
-if(q.value == "null"){
-    document.getElementById("name").style.display = "none";
+    var q = prompt("Please Enter Your Name")
+    document.getElementById("name").innerHTML = "Hello" +" "+ q;
+    if (q === null || q == "" ){
+        document.getElementById("name").style.display ="none";
+    }
 }
-document.getElementById("name").innerHTML = "hello" +" "+ q ; 
 
-}
 
 
 
